@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .hero-content {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 48px;
+      
+      margin-bottom: 10px;
+    }
+
+    .hero-content h3 {
+      font-size: 24px;
+      color: orange;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 18px;
+      color: #333333;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      color: #333333;
+      font-weight: bold;
+    }
+
+   .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto); /* allow auto width */
+  gap: 30px;
+  padding: 40px 20px;
+  justify-content: center; /* center the two columns */
+}
+
+.card {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-height: 120px;
+  width: 300px; /* reduced width */
+  height:300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid 1px;
+}
+
+
+    .card h4 {
+      font-size: 22px;
+      color: orange;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: #555555;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+      }
+
+      .container {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero-content">
+    <h1>Projects</h1>
+    <h3>Things I've Built</h3>
+    <p>
+      These projects were built using multiple technologies including 
+      <span class="highlight">React.js</span>, 
+      <span class="highlight">Next.js</span>, 
+      <span class="highlight">Angular</span>, 
+      <span class="highlight">ASP.NET</span>, and other modern tools and frameworks to deliver high-quality web experiences.
+    </p>
+  </div>
+
+  <div class="projects-grid">
+    <div class="card">
+      <h4>E-Commerce Website</h4>
+      <p>An advanced e-commerce platform featuring dynamic product listings, a shopping cart, secure checkout, and admin dashboard.</p>
+    </div>
+    <div class="card">
+      <h4>E-Learning App</h4>
+      <p>A modern learning solution with video lessons, interactive quizzes, instructor management, and student performance tracking.</p>
+    </div>
+    <div class="card">
+      <h4>Reddit Clone</h4>
+      <p>A community-based platform enabling users to create posts, join subreddits, upvote content, and comment in real-time.</p>
+    </div>
+    <div class="card">
+      <h4>Realtime Chat App</h4>
+      <p>An instant messaging application with typing indicators, user authentication, online status tracking, and WebSocket integration.</p>
+    </div>
+    <div class="card">
+      <h4>Hospital Management System</h4>
+      <p>A full-stack administrative system for hospitals to manage patient records, doctor schedules, appointments, and billing.</p>
+    </div>
+    <div class="card">
+      <h4>Airbnb Clone</h4>
+      <p>A property rental application allowing users to search, filter, book, and list accommodations with a responsive booking UI.</p>
+    </div>
+  </div>
+
+</body>
+</html>
