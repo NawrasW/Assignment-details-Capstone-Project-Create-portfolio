@@ -1,47 +1,191 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Nawras Wraikat Portfolio" />
-    <title>Portfolio - Nawras Wraikat</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <nav>
-      <h2>My Portfolio</h2>
-      <div class="container">
-        <a href="index.html">Home</a>
-        <a href="mywork.html">My Work</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Nawras Wraikat - Full Stack Developer" />
+  <title>Nawras Wraikat - Full Stack Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-     <div class="hero-section">
-      <div class="overlay"></div>
-      <header class="hero-content">
-        <h1>Nawras Wraikat</h1>
-        <h3>Full-Stack Developer</h3>
-        <p>
-          I am a <span class="highlight">Front-End Developer</span> and
-          <span class="highlight">Back-End Developer</span> creating modern and responsive designs
-          for <span class="highlight">Web</span> Applications. Let us work together. Thank you.<br /><br />
-          I specialize in building high-performance user interfaces with clean, maintainable code. <br />
-          Whether you're launching a startup or improving an existing product, I can help bring your vision to life.
-        </p>
-      </header>
+  <!-- Navigation -->
+  <nav>
+  <div class="logo">Nawras Wraikat</div>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="container" id="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section fade-in">
+    <div class="overlay"></div>
+    <header class="hero-content">
+      <h1>Hi, I'm Nawras Wraikat</h1>
+      <h3>Full-Stack Developer</h3>
+      <p>
+        I build high-performance, responsive, and modern web applications
+        using technologies like <span class="highlight">React</span>, 
+        <span class="highlight">Angular</span>, and <span class="highlight">.NET</span>.
+      </p>
+      <p>
+        With a passion for coding and problem-solving, I aim to create 
+        digital experiences that are not only functional but also delightful to use.
+      </p>
+      <a href="#projects" class="btn-primary">View My Work</a>
+    </header>
+  </section>
+
+<!-- About Section -->
+<section id="about" class="about-section fade-in">
+  <h2>About Me</h2>
+  
+  <p>
+    I’m a dedicated <span class="highlight">software engineer</span> with expertise in both 
+    <span class="highlight">front-end</span> and <span class="highlight">back-end</span> development, 
+    transforming ideas into reality through elegant code and thoughtful design.
+  </p>
+  
+  <p>
+    With a bachelor's degreein Software Engineering and 
+    over four years of professional experience, I’m passionate 
+    about building high-quality, scalable web applications 
+    that solve real-world problems.
+  </p>
+  
+
+  
+  <p>
+    From concept to deployment, I ensure robust functionality, maintainable architecture, 
+    and an exceptional user experience in every project I work on.
+  </p>
+  
+  <p>
+    I’m always eager to sharpen my skills, explore emerging technologies, and 
+    contribute to impactful projects that bring real value to 
+    businesses and their users.
+  </p>
+</section>
+
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section fade-in">
+    <h2>Skills & Technologies</h2>
+    <p>Here are some of the tools and frameworks I work with:</p>
+    <div class="skills-grid">
+      <div class="skill-card">React.js</div>
+      <div class="skill-card">Next.js</div>
+      <div class="skill-card">Angular</div>
+      <div class="skill-card">ASP.NET</div>
+      <div class="skill-card">SQL Server</div>
+      <div class="skill-card">Node.js</div>
     </div>
+  </section>
 
-    <footer class="footer">
-      <div class="left">
-        <a href="https://www.linkedin.com/in/nawras-wraikat-67a4552b1/" target="_blank">
-          <img src="linkedin.png" alt="LinkedIn" />
-        </a>
-      </div>
-      <div class="right">
-        <a href="https://github.com/NawrasW" target="_blank">
-          <img src="github.png" alt="GitHub" />
-        </a>
-      </div>
-    </footer>
-  </body>
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section fade-in">
+    <h2>Projects</h2>
+    <p class="projects-intro">
+      Here’s a selection of projects I’ve worked on using technologies like 
+      <span class="highlight">React.js</span>, <span class="highlight">Next.js</span>, 
+      <span class="highlight">Angular</span>, and <span class="highlight">ASP.NET</span>.
+    </p>
+    <div class="projects-grid">
+  <div class="card">
+    <h4>E-Commerce Website</h4>
+    <p>An online store built with React and Postgresql featuring user authentication, product management, and secure payment processing. Designed to deliver smooth shopping experiences with responsive design.</p>
+  </div>
+  <div class="card">
+    <h4>E-Learning App</h4>
+    <p>Interactive full-stack learning platform enabling users to access courses, track progress,  Built with React and Node.js for scalable performance and rich user engagement.</p>
+  </div>
+  <div class="card">
+    <h4>Reddit Clone</h4>
+    <p>A community-driven platform with posting, voting, commenting, and moderation features. Developed using Next.js and MongoDB to handle real-time data and user interactions efficiently.</p>
+  </div>
+  <div class="card">
+    <h4>Realtime Chat App</h4>
+    <p>Live messaging application utilizing WebSocket and Node.js for instant communication. Features include typing indicators, message history, and user presence status to foster interactive conversations.</p>
+  </div>
+  <div class="card">
+    <h4>Hospital Management</h4>
+    <p>Comprehensive patient and administration system built with ASP.NET MVC. Supports appointment scheduling, medical records management, and staff coordination with a secure and user-friendly interface.</p>
+  </div>
+  <div class="card">
+    <h4>Airbnb Clone</h4>
+    <p>Room listing platform with advanced filters, interactive maps, and seamless payment integration. Developed using React and Postgresql to provide a scalable and intuitive booking experience.</p>
+  </div>
+  <div class="card">
+    <h4>Restaurant App</h4>
+    <p>A full-featured application for restaurant discovery, menu browsing, and online reservations. Built with Angular and ASP.NET Core, featuring real-time updates and customer reviews.</p>
+  </div>
+  <div class="card">
+    <h4>Google Flights Clone</h4>
+    <p>A flight search and booking platform modeled after Google Flights. Built using React and integrated with a flight data API to provide users with real-time pricing, filtering, and itinerary options.</p>
+  </div>
+</div>
+
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section fade-in">
+    <h2>Get in Touch</h2>
+    <p>If you’d like to work together or just say hi, fill out the form below:</p>
+    <form>
+      <input type="text" placeholder="First Name" required />
+      <input type="text" placeholder="Last Name" required />
+      <input type="text" placeholder="Subject" required />
+      <textarea placeholder="Your Message" rows="6" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div>
+      <a href="https://www.linkedin.com/in/nawras-wraikat/" target="_blank">
+        <img src="linkedin.png" alt="LinkedIn" />
+      </a>
+      <a href="https://github.com/NawrasW" target="_blank">
+        <img src="github.png" alt="GitHub" />
+      </a>
+    </div>
+    <p>© 2025 Nawras Wraikat. All rights reserved.</p>
+  </footer>
+
+  <!-- Smooth Scroll Animation -->
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2 };
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('appear');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => { appearOnScroll.observe(fader); });
+
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+  const nav = document.querySelector('nav');
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+  </script>
+
+</body>
 </html>
